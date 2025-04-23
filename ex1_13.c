@@ -18,9 +18,10 @@ int main()
 			
 			if(state == IN )
 			{
-				printf("%d\n", count);
+				//printf("%d\n", count);
 		  		state = OUT;
 				count = 0;
+                putchar('\n');
 			}
 		
 		}
@@ -28,6 +29,7 @@ int main()
 		{
           count++;
 		  state = IN;
+          putchar('*');
 		}
 		
     }		
